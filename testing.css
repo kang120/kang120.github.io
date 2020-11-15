@@ -1,0 +1,267 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+.header{
+	box-sizing:border-box;
+	padding-left:1%;
+	padding-right:1%;
+	width:90%;
+	margin:0 auto;
+}
+
+.logo {
+	float:left;
+	border-right:1px solid #e5e5e5;
+	width:240px;
+	height:80px;
+}
+
+.logo a{
+	line-height:80px;
+}
+
+.logo img{
+	margin-top:10px;
+}
+
+.menu{
+	clear:left;
+	margin-top:8px;
+	background:#333;
+	box-sizing:border-box;
+	height:45px;
+	padding-left:45px;
+	box-shadow:0px 3px 6px -3px rgb(0,0,0,.75);
+}
+
+.menu div{
+	background:#333;
+	color:white;
+	display:inline-block;
+	height:45px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-right:2px;
+	line-height:46px;
+}
+
+.menu .current,.menu div:hover{
+	background:#c00;
+	cursor:pointer;
+}
+
+.menu .history{
+	background:#c00;
+	float:right;
+	border-radius:15px;
+	text-align:center;
+	margin-top:10px;
+	margin-right:20px;
+	height:24px;
+	line-height:24px;
+	font-size:14px;
+	cursor:pointer;
+}
+
+div.container{
+	background:blue;
+	height:60px;
+	width:50%;
+	float:left;
+}
+
+div.innerbox{
+	position:relative;
+	background:yellow;
+	height:60px;
+	text-align:center;
+	width:50%;
+	float:right;
+}
+
+.innerbox p{
+	margin:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.clear{
+	clear:both;
+}
+
+.vertical{
+	z-index:1;
+	float:left;
+	background:#f3f3f3;
+	color:black;
+	width:160px;
+	height:722px;
+	margin:0;
+	padding:0;
+	position:sticky;
+	top:0;
+	overflow:auto;
+}
+
+.vertical div{
+	text-align:center;
+	font-size:18px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.vertical div:hover{
+	background:#999;
+	cursor:pointer;
+}
+
+.navigation{
+	box-sizing:border-box;
+	height:45px;
+	background:#333;
+	color:white;
+	position:sticky;
+	top:0;
+	width:100%;
+}
+
+.navigation div{
+	display:inline-block;
+	padding:0px 10px;
+	line-height:46px;
+}
+
+.navigation>div:hover{
+	background:red;
+	cursor:pointer;
+}
+
+.navigation .current{
+	background:red;
+}
+
+.navigation .dropbox{
+	position:relative;
+}
+
+.navigation .content{
+	position:absolute;
+	display:none;
+	left:0;
+	background:white;
+	color:black;
+	box-shadow:0 3px 6px -3px rgb(0,0,.75);
+	padding:0;
+	margin:0;
+	text-align:center;
+	width:120%;
+	height:120px;
+	overflow:auto;
+}
+
+.navigation .content div{
+	display:block;
+	padding:10px 5px;
+	line-height:20px;
+	margin:0;
+}
+
+.navigation .content div:hover{
+	background:#999;
+}
+
+.navigation .dropbox:hover .content{
+	display:block;
+}
+
+.box{
+	margin-left:160px;
+	background:#999;
+}
+
+.form{
+	background:#f2f2f2;
+	margin-left:30%;
+	margin-right:30%;
+	height:150px;
+	padding:30px;
+	padding-top:10px;
+}
+
+.label{
+	width:30%;
+	float:left;
+	margin-top:10px;
+}
+
+.input{
+	width:70%;
+	float:left;
+	margin-top:10px;
+}
+
+input{
+	border:none;
+	width:65%;
+	margin-left:10px;
+}
+
+.check{
+	position:absolute;
+	right:0;
+	top:0;
+	margin-right:45px;
+	color:red;
+}
+
+input[type="submit"]{
+	margin-top:20px;
+	margin-right:30px;
+	float:right;
+	width:80px;
+	border:1px solid black;
+	background:gray;
+	color:white;
+	cursor:pointer;
+	border-radius:4px;
+}
+
+.video{
+	background:url("onepiece 1.jpg") 50%;
+	margin-left:160px;
+	text-align:center;
+	padding-top:40px;
+}
+
+iframe{
+	width:70%;
+	height:500px;
+}
+
+video{
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+@media screen and (max-width:950px){
+	.label,.input,input[type="submit"]{
+		width:100%;
+		text-align:center;
+	}
+	input[type="submit"]{
+		margin:auto;
+		margin-top:20px;
+	}
+	.form{
+		height:250px;
+	}
+}
